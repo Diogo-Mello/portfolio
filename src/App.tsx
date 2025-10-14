@@ -1,4 +1,5 @@
 import Header from "./sections/header"
+import "./App.css"
 
 function App() {
 
@@ -7,9 +8,7 @@ function App() {
     <>
         <Header></Header>
 
-        <p>Diogo <br/> Mello</p>
-
-        <p>Fullstack Developer at Polo Tecnológico Cuesta</p>
+        <hr className="divider"/>
     </>
   )
 }
