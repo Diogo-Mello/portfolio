@@ -1,5 +1,9 @@
 import styles from "./header.module.css";
 import Avatar from "../../assets/avatar.svg"
+import IconMySQL from "../../assets/mysql.svg"
+import IconNode from "../../assets/nodejs.svg"
+import IconReact from "../../assets/react.svg"
+import IconPHP from "../../assets/php.svg"
 
 import Welcome from "../../components/welcome";
 
@@ -32,12 +36,25 @@ function Header() {
                 </a>
             </div>
 
-            <div className={styles.avatar}>
-                <img className={styles.avatarSVG} src={Avatar} alt="Diogo Avatar" />
+            <div className={styles.avatarWrapper}>
+                <div className={styles.avatar}>
+                    <img className={styles.avatarSVG} src={Avatar} alt="Diogo Avatar" />
+                </div>
+
+                <img src={IconMySQL} className={`${styles.techIcon} ${styles.iconMySQL}`} alt="MySQL" />
+                <img src={IconNode} className={`${styles.techIcon} ${styles.iconNode}`} alt="Node.JS" />
+                <img src={IconPHP} className={`${styles.techIcon} ${styles.iconPHP}`} alt="PHP" />
+                <img src={IconReact} className={`${styles.techIcon} ${styles.iconReact}`} alt="React" />
             </div>
+
+            <div className={styles.cv}>
+                <p className={styles.textCV }>Baixar CV</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#7a4ae2bb" viewBox="0 0 256 256"><path d="M222,144v64a6,6,0,0,1-6,6H40a6,6,0,0,1-6-6V144a6,6,0,0,1,12,0v58H210V144a6,6,0,0,1,12,0Zm-98.24,4.24a6,6,0,0,0,8.48,0l40-40a6,6,0,0,0-8.48-8.48L134,129.51V32a6,6,0,0,0-12,0v97.51L92.24,99.76a6,6,0,0,0-8.48,8.48Z"></path></svg>
+            </div>
+
         </div>
 
-        
+
     )
 }
 
