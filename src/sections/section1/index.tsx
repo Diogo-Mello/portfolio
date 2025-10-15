@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./section1.module.css";
 import Avatar from "../../assets/avatar.svg"
 import IconMySQL from "../../assets/mysql.svg"
 import IconNode from "../../assets/nodejs.svg"
@@ -8,7 +8,7 @@ import IconPHP from "../../assets/php.svg"
 import Welcome from "../../components/welcome";
 
 
-function Header() {
+function Section1 () {
     return (
         <div className={styles.header}>
             <div className={styles.welcome}>
@@ -58,4 +58,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Section1;

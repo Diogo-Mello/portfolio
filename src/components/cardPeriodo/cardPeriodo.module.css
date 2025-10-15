@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 8rem;
+    border-radius: 1rem;
+    border: 1px solid #7a4ae25e;
+}
+
+.icon, .text {
+    width: 100%;
+    height: 50%;
+    color: white;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSVG {
+    width: 3rem;
+    font-weight: bold;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.smallText {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bigText {
+    font-size: 24px;
+    font-weight: bold;
+}
